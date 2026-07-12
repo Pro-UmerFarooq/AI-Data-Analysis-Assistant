@@ -3,7 +3,7 @@ import pandas as pd
 
 from analysis import *
 from visualization import *
-from ai_helper import *
+from gemini_helper import *
 from qa_engine import *
 from utils import *
 from gemini_helper import ask_gemini
@@ -278,13 +278,6 @@ Statistics
 {summary}
 """
 
-if st.button("Generate AI Explanation"):
-
-    with st.spinner("Generating AI Explanation..."):
-
-        explanation = generate_ai_explanation(summary_text)
-
-        st.write(explanation)    
 
 # -------------------------------------------------
 # DOWNLOAD CSV
